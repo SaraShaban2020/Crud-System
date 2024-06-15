@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section id="home" class="home">
+        <div class="container">
+            <h1 class="pt-5">Bookmaker App</h1>
+            <form action="#">
+                <label class="mb-2">Site Name:</label>
+                <input type="text" name="siteName" id="siteName" class="form-control mb-2 " placeholder="Site Name....">
+                <ul class="alert alert-danger invalid-feedback">
+                   <li>Name is required</li>
+                </ul>
+                <label class="mb-2">Site Url:</label>
+                <input type="url" name="siteUrl" id="siteUrl" class="form-control mb-2" placeholder="Site Url...">
+                <ul class="alert alert-danger invalid-feedback">
+                    <li>Url is required</li>
+                
+                </ul>
+                <button class="btn btn-primary w-100 mt-2" id="add">Add Bookmaker</button>
+                <button class="btn btn-success update w-100 mt-2 d-none " id="update">Update Bookmaker</button>
+            </form>
+            <input type="search" name="search" id="search" placeholder="Search..." class="form-control m-3 w-75 mx-auto">
+
+        <div class="tableData">
+            <table class=" table w-100">
+                <thead>
+                  <tr> 
+                    <th scope="col">Name</th>
+                    <th scope="col">URL</th>
+                    <th scope="col">Action</th>
+                  </tr> 
+                </thead>
+                <tbody id="data">
+                 
+                  
+                </tbody>
+            </table>
+        </div>
+        
+        </div>
+    </section>
+    
+     <script src="js/bootstrap.bundle.min.js"></script>
+     <script src="js/script.js"></script>
+</body>
+</html>
